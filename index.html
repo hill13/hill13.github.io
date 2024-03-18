@@ -1,0 +1,125 @@
+<html>
+<svg width="100%" height="300" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+        <rect width="100%" height="100%" fill="Silver" />
+        <circle cx="100%" cy="65%" r="150" fill="tan" stroke="black" fill-opacity="0.6" />
+        <polygon points="300,300 440,100 600,300" fill="#A1DD70" />
+        <text x="50" y="100" font-family="Verdana" font-size="55" fill="yellow" stroke="black" stroke-width="1"
+            transform>
+            Hello guys!! Welcome to Assignmnet 5
+        </text>
+        <g>
+            <path fill-opacity="0.1" stroke="lightgray" d="
+                M 440, 100
+                m -50, 0
+                a 50,50 0 1,0 100,0
+                a 50,50 0 1,0 -100,0
+            " />
+            ` <circle r="5" fill="blue">
+                <animateMotion dur="10s" repeatCount="indefinite" path=" M 440, 100
+                    m -50, 0
+                    a 50,50 0 1,0 100,0
+                    a 50,50 0 1,0 -100,0" />
+            </circle>
+        </g>
+</svg>
+
+<nav class="menue">
+    <ul>
+        <li><a href = "http://127.0.0.1:3000/index.html">Home Page</a></li>
+        <li><a href = "http://127.0.0.1:3000/views/two.html">Page Two</a></li>
+        <li><a href = "http://127.0.0.1:3000/views/three.html">Page Three</a></li>
+    </ul>  
+</nav>
+
+<h1> Assignment 5</h1>
+
+<h2 class="css-question">How to Apply CSS to HTML </h2>
+
+<p class="css-question">
+    An external stylesheet contains CSS in a separate file with a .css extension. This is the most common and useful method of bringing CSS to a document. You can link a single CSS file to multiple web pages, styling all of them with the same CSS stylesheet. In the Getting started with CSS, we linked an external stylesheet to our web page.
+
+You reference an external CSS stylesheet from an HTML <code>&lt;link&gt;</code> element:
+<code>
+    <!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <title>My CSS experiment</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <p>This is my first CSS example</p>
+  </body>
+</html>
+</code>
+The CSS stylesheet file might look like this:
+<pre>
+    h1 {
+        color: blue;
+        background-color: yellow;
+        border: 1px solid black;
+      }
+      
+      p {
+        color: red;
+      }
+      
+    </pre>
+
+<h2 class="js-question">How to use JavaScript in a Webpage</h2>
+<p class="js-question">
+    <ul>
+        <li>How to link to an external JavaScript file with an example.
+            <p>
+                To link to an external JavaScript file in an HTML document, you can use the <code>&lt;script&gt;</code> tag with the src attribute. Here's an example:</p>
+                <code>
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>External JavaScript Example</title>
+                        <!-- Link to the external JavaScript file -->
+                        <script src="external_script.js" defer></script>
+                    </head>
+                    <body>
+                        <h1>Hello, External JavaScript!</h1>
+                        <!-- Your HTML content goes here -->
+                    </body>
+                    </html>
+                     
+                </code>
+            
+        </li>
+        <li>How to write JavaScript code within an html file with an example.</li>
+        <p>
+            To write JavaScript code within an HTML file, you can use the <code>&lt;script&gt;</code> tag directly in the HTML document. Here's an example:</p>
+           <code>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline JavaScript Example</title>
+</head>
+<body>
+
+    <h1>Hello, Inline JavaScript!</h1>
+
+    <!-- Inline JavaScript code -->
+    <script>
+        // Your JavaScript code goes here
+        alert("This is an inline JavaScript example!");
+    </script>
+
+</body>
+</html>
+
+           </code> 
+    </ul>
+</p>
+
+<link rel="icon" href="http://127.0.0.1:5500/Resources/favion.svg" type="image/svg+xml">
+
