@@ -33,7 +33,20 @@
 </nav>
 
 <h1> SVG Animation is easy!</h1>
-<img src = "resources/page-three.svg" alt = circle moving in along the edge of a rectangle>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300">
+    <!-- Empty Rectangle -->
+    <rect x="40" y="40" width="160" height="160" fill="none" stroke="black" stroke-width="2" />
+
+    <!-- Small Circle (Dot) following the path of the rectangle -->
+    <circle cx="20" cy="20" r="5" fill="red">
+        <animateMotion repeatCount="indefinite" dur="10s">
+            <mpath href="#path"/>
+        </animateMotion>
+    </circle>
+
+    <!-- Path for the animation -->
+    <path id="path" d="M20 20 H180 V180 H20 V20 Z" fill="none" />
+</svg>
 
 <link rel="icon" href="http://127.0.0.1:5500/Resources/favion.svg" type="image/svg+xml">
 
